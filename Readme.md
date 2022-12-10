@@ -1,6 +1,6 @@
-# Личный проект «{{projectTitle}}» 
+# Личный проект «Sedona» 
 
-* Студент: [{{userName}}]({{userProfile}}).
+* Студент: [Дмитрий Мериуц](https://github.com/D-Meriuts/Sedona).
 * Наставник: `Неизвестно`.
 
 ---
