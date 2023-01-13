@@ -1,7 +1,18 @@
 .page {
   height: 100%;
 }
-// узнать для чего 100%
-.page__body {
 
+.page__body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  background-color: $white;
+  color: $black_2;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  min-height: 100%;
+  display: grid;
+  text-transform: uppercase;
 }

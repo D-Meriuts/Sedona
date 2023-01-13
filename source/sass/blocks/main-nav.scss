@@ -1,22 +1,31 @@
 .main-nav {
+  background-color: $white_blue;
+  position: relative;
+}
+
+.main-nav::after {
 
 }
 
 .main-nav__toggle {
-
+  position: absolute;
 }
 
 .main-nav__list{
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.main-nav__item {
-
+.main-nav__item a{
+  color: $white;
+  font-weight:700;
+  font-size: 18px;
+  line-height: 40px;
 }
 
 .main-nav__item--current {
 
 }
-
-
-

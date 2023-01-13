@@ -1,0 +1,35 @@
+.revocation-form {
+
+}
+
+.revocation-form__item {
+  border: none;
+}
+
+.revocation-form__title {
+  font-weight: 700;
+  font-size: 18px;
+  color: $black_1;
+}
+
+.revocation-form__field {
+
+}
+
+.revocation-form__list,
+.form-feedback__input,
+.form-feedback__input::placeholder {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black_1;
+  text-transform: none;
+}
+
+.revocation-form__button {
+
+}
+
+.form-feedback__input {
+  resize: none;
+}

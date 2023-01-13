@@ -1,0 +1,20 @@
+.field {
+
+}
+
+.field__label {
+
+}
+
+.field__input,
+.field__input::placeholder {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black_1;
+}
+
+.field__input {
+  background-color: $grey_2;
+  border: none;
+}
