@@ -1,9 +1,10 @@
 a {
-
+  text-decoration: none;
 }
 
 img {
-
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -18,4 +19,16 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }

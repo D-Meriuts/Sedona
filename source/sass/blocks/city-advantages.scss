@@ -1,16 +1,55 @@
 .city-advantages {
-
+  background-color: $white;
 }
 
 .city-advantages__list {
 
 }
 
-.city-advantages__item {
 
+.city-advantages__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.city-advantages__item::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  // left: 0;
+  background-repeat: no-repeat;
+}
+
+.city-advantages__item:first-child::before {
+  background-image: url("../img/icon-house.svg.svg");
+    // background-position: 10px; для смещения картинки пере
+}
+
+.city-advantages__item:nth-child(2)::before {
+  background-image: url("../img/icon-gift.svg.svg");
+    // background-position: 10px; для смещения картинки пере
+}
+
+.city-advantages__item:nth-child(3)::before {
+  background-image: url("../img/icon-burger.svg.svg");
+    // background-position: 10px; для смещения картинки пере
 }
 
 .city-advantages__title {
-
+  color: $black_1;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
 }
 
+.city-advantages__description {
+  color: $black_2;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
