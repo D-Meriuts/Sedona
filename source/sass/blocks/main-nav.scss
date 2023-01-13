@@ -11,7 +11,7 @@
   position: absolute;
 }
 
-.main-nav__list{
+.main-nav__list {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,9 +19,9 @@
   flex-wrap: wrap;
 }
 
-.main-nav__item a{
+.main-nav__item a {
   color: $white;
-  font-weight:700;
+  font-weight: 700;
   font-size: 18px;
   line-height: 40px;
 }
