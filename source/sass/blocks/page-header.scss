@@ -6,13 +6,67 @@
   background-image: url("../img/back-mobile.jpg.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
+  background-color: $white;
   padding-bottom: 389px;
 }
 
-.page-header__logo {
-  align-self: center;
+.page-header--index {
+  margin-bottom: 32px;
 }
 
-// .page-header__img {
+.page-header--form {
+  margin-bottom: 36px;
+}
 
-// }
+.page-header--gallery {
+  margin-bottom: 24px;
+}
+
+.page-header__container {
+  order: 2;
+  margin: 0 auto;
+  height: 56px;
+}
+
+.page-header__logo {
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header--index {
+    margin-bottom: 43.5px;
+  }
+
+  .page-header--form {
+    margin-bottom: 64px;
+  }
+
+  .page-header--gallery {
+    margin-bottom: 59px;
+  }
+
+  .page-header__container {
+    position: absolute;
+    right: calc(50% - 51px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header--index {
+    margin-bottom: 55px;
+  }
+
+  .page-header--form {
+    margin-bottom: 114px;
+  }
+
+  .page-header--gallery {
+    margin-bottom: 96px;
+  }
+
+  .page-header__logo {
+    height: 97px;
+  }
+}
+// .page-header__img {}
