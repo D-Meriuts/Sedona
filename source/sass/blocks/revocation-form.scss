@@ -1,35 +1,110 @@
 // .revocation-form {
-
 // }
 
 .revocation-form__item {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
-.revocation-form__title {
-  font-weight: 700;
-  font-size: 18px;
-  color: $black_1;
-}
+// .revocation-form__item--name,
+// .revocation-form__item--contacts,
+// .revocation-form__item--impressions,
+// .revocation-form__item--attraction {
 
-// .revocation-form__field {
+// }
+// .revocation-form__title {
 
 // }
 
-.revocation-form__list,
-.form-feedback__input,
-.form-feedback__input::placeholder {
+.revocation-form__field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.revocation-form__list {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 26px;
   color: $black_1;
   text-transform: none;
+  border: none;
+  width: 100%;
 }
 
-// .revocation-form__button {
+.revocation-form__button {
+  width: 280px;
+  min-height: 58px;
+}
 
-// }
 
-.form-feedback__input {
-  resize: none;
+@media (min-width: $tablet-width) {
+  .revocation-form__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .revocation-form__item {
+    flex-grow: 1;
+  }
+
+  .revocation-form__item--contacts,
+  .revocation-form__item--attraction,
+  .revocation-form__item--feedback {
+    flex-basis: 100%;
+  }
+
+  .revocation-form__field--contacts .field__label,
+  .revocation-form__field--contacts .field__input {
+    flex-basis: 100%;
+  }
+
+  .revocation-form__item--name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+
+  .revocation-form__item--impressions {
+    order: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .revocation-form__list--attraction {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .revocation-form__list-item--checkbox {
+    flex-shrink: 1;
+    flex-basis: 225px;
+  }
+
+  .revocation-form__button {
+    width: 324px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .revocation-form__field--contacts .field__label,
+  .revocation-form__field--contacts .field__input {
+    flex-basis: auto;
+  }
+
+  .revocation-form__item--contacts {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .revocation-form__button {
+    width: 480px;
+  }
 }

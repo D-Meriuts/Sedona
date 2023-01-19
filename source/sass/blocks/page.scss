@@ -6,13 +6,44 @@
   min-width: 320px;
   margin: 0;
   padding: 0;
-  background-color: $white;
+  background-color: $grey_2;
   color: $black_2;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
   min-height: 100%;
-  display: grid;
   text-transform: uppercase;
+}
+
+.page__wrapper {
+  background-color: $white;
+  margin: 0 auto;
+  width: 320px;
+  outline: 2px solid #ff0000;
+  outline-offset: 0;
+}
+
+@media (min-width: $tablet-width) {
+  // .page__body {
+  //   width: 768px;
+  // }
+  .page__wrapper {
+    width: 768px;
+    outline: 2px solid #008000;
+    outline-offset: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  // .page__body {
+  //   width: 1200px;
+  //   margin: 0 auto;
+  // }
+  .page__wrapper {
+    width: 1200px;
+    outline: 2px solid #ffff00;
+    outline-offset: 0;
+    box-shadow: 0 6px 15px 0#00000040;
+  }
 }

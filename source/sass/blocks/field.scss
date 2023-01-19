@@ -17,4 +17,47 @@
 .field__input {
   background-color: $grey_2;
   border: none;
+  padding: 18px 22px 14px 22px;
+  height: 58px;
+}
+
+.field__input--firstname {
+  width: 230px;
+}
+
+.field__input--surname {
+  width: 192px;
+}
+
+.field__input--patronymic {
+  width: 194px;
+}
+
+@media (min-width: $tablet-width) {
+  .field__input--firstname {
+    width: 216px;
+  }
+
+  .field__input--surname {
+    width: 178px;
+  }
+
+  .field__input--patronymic {
+    width: 180px;
+  }
+  // .revocation-form__field {}
+}
+
+@media (min-width: $desktop-width) {
+  .field__input--firstname {
+    width: 350px;
+  }
+
+  .field__input--surname {
+    width: 312px;
+  }
+
+  .field__input--patronymic {
+    width: 314px;
+  }
 }
