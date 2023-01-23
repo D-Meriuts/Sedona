@@ -1,13 +1,11 @@
 .page-header {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  background-image: url("../img/back-mobile.jpg.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: stretch;
+
   background-color: $white;
-  padding-bottom: 389px;
+  // padding-bottom: 389px;
 }
 
 .page-header--index {
@@ -23,14 +21,18 @@
 }
 
 .page-header__container {
-  order: 2;
-  margin: 0 auto;
-  height: 56px;
+  // order: 2;
+  // margin: 0 auto;
+  // height: 56px;
+  background-color: $grey_2;
+  background-image: url("../img/back-mobile.jpg.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .page-header__logo {
-  position: relative;
-  z-index: 1;
+  position: absolute;
+  // z-index: 1;
 }
 
 @media (min-width: $tablet-width) {

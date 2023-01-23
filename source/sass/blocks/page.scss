@@ -20,8 +20,8 @@
   background-color: $white;
   margin: 0 auto;
   width: 320px;
-  outline: 2px solid #ff0000;
-  outline-offset: 0;
+  // outline: 2px solid #ff0000;
+  // outline-offset: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -30,8 +30,8 @@
   // }
   .page__wrapper {
     width: 768px;
-    outline: 2px solid #008000;
-    outline-offset: 0;
+    // outline: 2px solid #008000;
+    // outline-offset: 0;
   }
 }
 
@@ -42,8 +42,8 @@
   // }
   .page__wrapper {
     width: 1200px;
-    outline: 2px solid #ffff00;
-    outline-offset: 0;
+    // outline: 2px solid #ffff00;
+    // outline-offset: 0;
     box-shadow: 0 6px 15px 0#00000040;
   }
 }

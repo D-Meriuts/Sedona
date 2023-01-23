@@ -10,14 +10,12 @@
     <div class="page__wrapper">
 
       <header class="page-header page-header--index">
-        <div class="page-header__container">
-          <a class="page-header__logo" href>
-            <img class="page-header__img" src="img/logotype-mobile.svg.svg" alt="логотип сайта Sedona" width="102" height="84">
-          </a>
-        </div>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
+            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.2 2.8L19.4 0L11.1 8.3L2.8 0L0 2.8L8.3 11.1L0 19.4L2.8 22.2L11.1 13.9L19.4 22.2L22.2 19.4L13.9 11.1L22.2 2.8Z" fill="white"/>
+              </svg>
           </button>
           <ul class="main-nav__list list">
             <li class="main-nav__item main-nav__item--current">
@@ -33,7 +31,13 @@
               <a href="https://htmlacademy.ru/" target="_blank">html academy</a>
             </li>
           </ul>
+          <a class="page-header__logo" href>
+            <img class="page-header__img" src="img/logotype-mobile.svg.svg" alt="логотип сайта Sedona" width="102" height="84">
+          </a>
         </nav>
+        <div class="page-header__container">
+            <img class="page-header__welcome" src="../source/img/header_background/text-index.svg.svg" alt="Добро пожаловать" width="282" height="214">
+        </div>
       </header>
 
       <main class="page-main page-main--index">
