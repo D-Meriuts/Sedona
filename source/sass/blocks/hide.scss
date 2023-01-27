@@ -2,14 +2,16 @@
 
 // }
 
-@media (min-width: $desktop-width) {
-  .hide--desktop {
+.hide--desktop {
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }
 
-@media (max-width: $mobile-width-only) {
-  .hide--phone {
-    display: none;
+.hide--phone {
+  display: none;
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-right: 60px;
   }
 }

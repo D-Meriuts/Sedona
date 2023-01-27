@@ -1,38 +1,30 @@
 .page-main--index {
   margin-bottom: 39px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 36px;
+  }
 }
 
 .page-main--form {
   margin-bottom: 77px;
-  padding: 0 20px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 97px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 102px;
+  }
 }
 
 .page-main--gallery {
   margin-bottom: 78px;
-}
 
-@media (min-width: $tablet-width) {
-  .page-main--index {
-    margin-bottom: 36px;
-  }
-
-  .page-main--form {
-    margin-bottom: 97px;
-    padding: 0 60px;
-  }
-
-  .page-main--gallery {
+  @media (min-width: $tablet-width) {
     margin-bottom: 76px;
     padding: 0 60px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .page-main--form {
-    margin-bottom: 102px;
-  }
-
-  .page-main--gallery {
+  @media (min-width: $desktop-width) {
     margin-bottom: 121px;
   }
 }

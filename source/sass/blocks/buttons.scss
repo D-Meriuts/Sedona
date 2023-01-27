@@ -5,8 +5,20 @@
   flex-wrap: wrap;
   color: $white;
   background-color: $white_blue;
+  text-transform: uppercase;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   border: none;
+  padding: 16px;
+  &:hover {
+    background-color: $white-blue_4;
+  }
+  &:focus {
+    border: $white-blue_5;
+    color: $white_active;
+  }
+  &:disabled {
+    background-color: $grey_3;
+  }
 }

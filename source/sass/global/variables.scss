@@ -2,14 +2,28 @@
 $white_blue: #81b3d2;
 $white-blue_2: #9ac2db;
 $white-blue_3: #678fa8;
+$white-blue_4: #669ec0;
+$white-blue_5: #5496bd;
 $white:#ffffff;
+$white_active:rgba(255, 255, 255, 0.3);
+$white_opacity_2:rgba(255, 255, 255, 0.6);
+
 $black_1: #000000;
+$black_1_opacity: rgba(0, 0, 0, 0.3);
+$black_1_opacity_2: rgba(0, 0, 0, 0.6);
+
 $black_2: #333333;
 $grey: #eeeeee;
 $grey_2: #f2f2f2;
 $grey_3: #e5e5e5;
+$grey_4: #d6d6d6;
+$grey_5: #e6e6e6;
+$grey_6: #d5d5d5;
+$brown: #766357;
+$brown_disabled: rgba(118, 99, 87, 0.3);
+$brown_hover: #604E43;
 
 // viewports
+$mobile-width-only: 767px;
 $tablet-width: 768px;
 $desktop-width: 1200px;
-$mobile-width-only: 767px;

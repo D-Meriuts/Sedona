@@ -21,18 +21,14 @@
   width: 48px;
   height: 48px;
   background-color: $white_blue;
-  margin-right: 6px;
-  margin-bottom: 6px;
+  margin: 3px 3px;
+  &:hover {
+    background-color: $white-blue_4;
+  }
+  &:active {
+    background-color: $white-blue_5;
+  }
+  &:active svg {
+    opacity: 0.3;
+  }
 }
-
-// .social__link--twitter {
-
-// }
-
-// .social__link--facebook {
-
-// }
-
-// .social__link--youtube {
-
-// }
