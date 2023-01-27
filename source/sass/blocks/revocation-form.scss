@@ -203,6 +203,64 @@
 //   }
 // }
 
+// начало revocation-form на flex-box на планшетах и десктопах
+@media (min-width: $tablet-width) {
+  .revocation-form__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .revocation-form__item--impressions {
+    order: -1;
+  }
+  .revocation-form__item--impressions,
+  .revocation-form__item--name {
+    flex-basis: 50%;
+    .revocation-form__title {
+      text-align: left;
+    }
+  }
+
+  .revocation-form__item--contacts,
+  .revocation-form__item--attraction,
+  .revocation-form__item--feedback {
+    .revocation-form__title {
+      display: grid;
+      grid-template-columns: min-content 1fr min-content;
+      align-items: center;
+      &::before,
+      &::after {
+        content: "";
+        position: relative;
+        min-width: 122px;
+        height: 1px;
+        background-color: red;
+      }
+    }
+  }
+
+  .revocation-form__item--contacts,
+  .revocation-form__item--attraction,
+  .revocation-form__item--feedback {
+    flex-basis: 100%;
+    .revocation-form__item--name {
+      position: relative;
+      &::before {
+        content: "";
+        left: 0;
+        bottom: 0;
+        height: 292px;
+        width: 1px;
+        background-color: $grey_7;
+        display: block;
+        position: absolute;
+      }
+    }
+  }
+}
+
+// конец revocation-form на flex-box на планшетах и десктопах
+
 
 .revocation-form__list {
   font-family: "PT Sans", "Arial", sans-serif;
@@ -223,24 +281,22 @@
   @media (min-width: $tablet-width) {
     padding: 0 60px;
   }
-
 }
 
 .revocation-form__title {
   text-align: center;
-}
-
-.revocation-form__title::before {
-  content: "";
-  position: absolute;
-  background-color: $grey_3;
-  height: 1px;
+  padding: 0;
   width: 100%;
-  top: -20px;
-  left: 0;
-  @media (min-width: $tablet-width) {
-
-
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: $grey_3;
+      height: 1px;
+      width: 100%;
+      top: -20px;
+      left: 0;
+    }
   }
 }
 
