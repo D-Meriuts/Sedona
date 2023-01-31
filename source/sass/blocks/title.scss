@@ -4,10 +4,8 @@
   color: $black_1;
   // text-align: center;
   margin: 0;
-}
 
-@media (min-width: $tablet-width) {
-  .title {
+  @media (min-width: $tablet-width) {
     font-size: 21px;
   }
 }

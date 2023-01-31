@@ -7,17 +7,21 @@
   background-color: $white_blue;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   border: none;
   padding: 16px;
-  &:hover {
+
+  &:hover,
+  &:focus-within {
     background-color: $white-blue_4;
   }
-  &:focus {
+
+  &:active {
     border: $white-blue_5;
     color: $white_active;
   }
+
   &:disabled {
     background-color: $grey_3;
   }

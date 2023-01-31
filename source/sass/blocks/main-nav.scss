@@ -2,52 +2,66 @@
   // background-color: $white_blue;
   position: relative;
   margin-bottom: 56px;
+
   @media (min-width: $tablet-width) {
     background-color: $white;
     margin-bottom: 0;
   }
 }
 
-// .main-nav::after {
-
-// }
-
-.main-nav__toggle.main-nav--closed {
-  display: block;
+.main-nav__toggle {
   position: absolute;
+  bottom: -40px;
   right: 20px;
-  top: 17px;
+  z-index: 2;
+  display: block;
+  width: 23px;
+  height: 23px;
+  padding: 0;
   background-color: transparent;
-  cursor: pointer;
   border: none;
+  cursor: pointer;
+
   &:hover {
     opacity: 0.6;
   }
+
   &:active {
     opacity: 0.3;
   }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-.main-nav__toggle.main-nav--open {
-  display: block;
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 23px;
+  height: 22px;
+  background-image: url("../img/svg_icons/icon-menu.svg.svg");
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 17px;
+  // left: auto;
   right: 20px;
-  bottom: -40px;
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-  &:hover {
-    opacity: 0.6;
-  }
-  &:active {
-    opacity: 0.3;
-  }
-  @media (min-width: $tablet-width) {
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/svg_icons/icon-cross.svg");
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .main-nav__item {
     display: none;
   }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
 }
 
 .main-nav__list {
@@ -65,12 +79,16 @@
   background-color: $white_blue;
   border-top: 1px solid $white-blue_2;
   border-bottom: 1px solid $white-blue_3;
-  &:hover {
+
+  &:hover,
+  &:focus-within {
     background-color: $white-blue_4;
   }
-  &:focus {
+
+  &:active {
     background-color: $white-blue_5;
   }
+
   &:last-child {
     border-bottom: none;
   }
@@ -82,12 +100,13 @@
     min-height: 56px;
     border: none;
     background-color: transparent;
-    &:hover {
+
+    &:hover,
+    &:focus-within,
+    &:active {
       background-color: transparent;
     }
-    &:focus {
-      background-color: transparent;
-    }
+
     &:nth-child(4n+2) {
       margin-right: 156px;
     }
@@ -97,6 +116,7 @@
 @media (min-width: $desktop-width) {
   .main-nav__item {
     width: 239px;
+
     &:nth-child(4n+2) {
       margin-right: 244px;
     }
@@ -111,7 +131,8 @@
   line-height: 40px;
   color: $white;
   padding: 10px 10px 5px 10px;
-  &:focus {
+
+  &:active {
     color: $white_active;
   }
 }
@@ -121,30 +142,33 @@
     color: $black_1;
   }
 
-  .main-nav__item a:hover {
+  .main-nav__item a:hover,
+  .main-nav__item a:focus {
     color: $white_blue;
+  }
+
+  .main-nav__item a:active {
+    color: $black_1_opacity;
   }
 
   .main-nav__item--current a {
     color: $brown;
   }
 
-  .main-nav__item--current a:hover {
+  .main-nav__item--current a:hover,
+  .main-nav__item--current a:focus {
     color: $brown_hover;
   }
 
-  // добавить класс для :disabled?
-  .main-nav__item a:disabled {
-    color: $black_1_opacity;
-  }
-
-  .main-nav__item--current a:disabled {
-    color: $brown_disabled;
+  .main-nav__item--current a:active {
+    color: $brown_opacity;
   }
 }
 
 .main-nav__item:last-child a {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 88%, rgba(0, 0, 0, 0.2) 100%);
+
   @media (min-width: $tablet-width) {
-    background: none;}
+    background: none;
+  }
 }

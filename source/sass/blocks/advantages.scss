@@ -1,8 +1,10 @@
 .advantages {
   margin-bottom: 33px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 57px;
   }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 58px;
   }
@@ -10,6 +12,7 @@
 
 .advantages__list {
   counter-reset: order 0;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -19,6 +22,7 @@
 
 .advantages__item {
   background-color: $grey;
+
   @media (min-width: $tablet-width) {
     &:nth-child(n+3) {
       flex-grow: 1;
@@ -50,6 +54,7 @@
   padding-top: 25px;
   padding-left: 20px;
   padding-right: 20px;
+
   @media (min-width: $tablet-width) {
     min-height: 256px;
   }
@@ -58,6 +63,7 @@
 .advantages__wrapper-pic {
   position: relative;
   margin-bottom: 260px;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -73,6 +79,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .advantages__item--pic:first-child .advantages__wrapper-pic::after {
   background-image: url("../img/photo-city@1x 1.jpg");
 }
@@ -87,6 +94,7 @@
     grid-column: 2/-1;
     height: 256px;
   }
+
   .advantages__item--pic:nth-child(2) .advantages__wrapper-pic::after {
     grid-column: 1/3;
     grid-row: 1/4;

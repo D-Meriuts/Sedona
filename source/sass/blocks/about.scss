@@ -3,9 +3,11 @@
   padding: 0 20px;
   margin-bottom: 27px;
   text-align: center;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 53px;
   }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 41px;
   }
@@ -16,6 +18,7 @@
   font-weight: 700;
   font-size: 18px;
   color: $black_1;
+
   @media (min-width: $tablet-width) {
     font-size: 21px;
   }

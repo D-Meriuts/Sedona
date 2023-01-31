@@ -10,8 +10,14 @@
 
 .hide--phone {
   display: none;
+
   @media (min-width: $tablet-width) {
     display: block;
     margin-right: 60px;
+    text-align: end;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 120px;
   }
 }

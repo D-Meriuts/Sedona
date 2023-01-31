@@ -7,6 +7,7 @@
   margin-bottom: 22px;
   padding-left: 20px;
   padding-right: 20px;
+
   @media (min-width: $tablet-width) {
     border: none;
     padding-bottom: 59px;
@@ -28,6 +29,7 @@
   text-align: center;
   margin: 0;
   margin-bottom: 35px;
+
   @media (min-width: $tablet-width) {
     font-size: 30px;
   }
@@ -42,6 +44,7 @@
 .description--form {
   padding: 0 20px;
   margin-bottom: 37px;
+
   @media (min-width: $tablet-width) {
     border: none;
     margin-bottom: 60px;
@@ -50,6 +53,4 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 57px;
   }
-//   margin-bottom: 16px;
-//   border-bottom: 1px solid $grey_3;
 }

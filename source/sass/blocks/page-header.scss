@@ -18,25 +18,28 @@
 .page-header__container {
   background-color: $grey_2;
   background-image:
-  url("data:image/svg+xml,%3Csvg width='768' height='57' viewBox='0 0 768 57' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M33.6 23.7L-216 0V57H33.6H384L33.6 0V23.7Z' fill='white'/%3E%3Cpath d='M734.4 23.7V0L384 57H734.4H983.9V0L734.4 23.7Z' fill='white'/%3E%3C/svg%3E%0A"),
-  url("../img/header_background/back-mobile.jpg.jpg");
-  background-repeat: no-repeat;
+    url("data:image/svg+xml,%3Csvg width='768' height='57' viewBox='0 0 768 57' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M33.6 23.7L-216 0V57H33.6H384L33.6 0V23.7Z' fill='white'/%3E%3Cpath d='M734.4 23.7V0L384 57H734.4H983.9V0L734.4 23.7Z' fill='white'/%3E%3C/svg%3E%0A"),
+    url("../img/header_background/back-mobile.jpg.jpg");
+  // background-repeat: no-repeat;
   background-repeat: no-repeat, no-repeat;
   background-position: center bottom, center;
   background-size: 1200px 57px, cover;
+
   @media (min-width: $tablet-width) {
     background-image:
-    url("data:image/svg+xml,%3Csvg width='768' height='57' viewBox='0 0 768 57' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M33.6 23.7L-216 0V57H33.6H384L33.6 0V23.7Z' fill='white'/%3E%3Cpath d='M734.4 23.7V0L384 57H734.4H983.9V0L734.4 23.7Z' fill='white'/%3E%3C/svg%3E%0A"),
-    url("../img/header_background/back-desktop.jpg.jpg");
+      url("data:image/svg+xml,%3Csvg width='768' height='57' viewBox='0 0 768 57' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M33.6 23.7L-216 0V57H33.6H384L33.6 0V23.7Z' fill='white'/%3E%3Cpath d='M734.4 23.7V0L384 57H734.4H983.9V0L734.4 23.7Z' fill='white'/%3E%3C/svg%3E%0A"),
+      url("../img/header_background/back-desktop.jpg.jpg");
   }
 }
 
 .page-header__logo {
   position: absolute;
   right: calc(50% - 51px);
+
   @media (min-width: $tablet-width) {
     top: 0;
   }
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: center;
@@ -50,14 +53,37 @@
   }
 }
 
-.page-header__welcome {
+.page-header__welcome--index {
   display: block;
   width: 282px;
   margin: auto;
   padding-top: 90px;
   padding-bottom: 85px;
+
   @media (min-width: $tablet-width) {
+    padding-top: 77px;
+    padding-bottom: 91px;
     width: 461px;
+  }
+}
+
+.page-header__welcome--inner {
+  display: block;
+  width: 229px;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 67px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 94px;
+    padding-bottom: 117px;
+    width: 460px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    padding-bottom: 120px;
+    width: 460px;
   }
 }
 
@@ -87,7 +113,6 @@
   .page-header--gallery {
     margin-bottom: 96px;
   }
-
 }
 
 // .page-header__img {

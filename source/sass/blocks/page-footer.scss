@@ -4,13 +4,14 @@
   // justify-content: space-between;
   // align-items: center;
   text-align: center;
-  padding-bottom: 23px;
+  margin-bottom: 23px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding-bottom: 36px;
+    margin-bottom: 36px;
   }
 }
 
@@ -20,11 +21,19 @@
   color: $black_1;
   margin: 0;
   margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .page-footer__social {
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .page-footer__copyright {
@@ -41,7 +50,8 @@
 
 // .page-footer__link {}
 
-.page-footer__link:hover path {
+.page-footer__link:hover path,
+.page-footer__link:focus-within path {
   fill: $white_blue;
   // fill: red;
 }

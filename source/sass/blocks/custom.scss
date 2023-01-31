@@ -2,11 +2,13 @@
   position: relative;
   cursor: pointer;
   display: block;
-  height: 48px;
+  // height: 48px;
 }
 
 .custom-radio span,
 .custom-checkbox span {
+  padding-left: 65px;
+  min-height: 56px;
   display: inline-flex;
   align-items: center;
   user-select: none;
@@ -17,11 +19,13 @@
 .custom-radio span::before,
 .custom-checkbox span::before {
   content: "";
-  display: inline-block;
-  width: 48px;
-  height: 48px;
+  position: absolute;
+  left: 0;
+  // display: inline-block;
+  width: 56px;
+  height: 56px;
   background-color: $grey_2;
-  margin-right: 0.5em;
+  // margin-right: 20px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;
@@ -36,44 +40,44 @@
 }
 
 /* стили при наведении курсора на радио и чекбокса */
-.custom-radio input:not(:disabled)+span:hover::before,
-.custom-checkbox input:not(:disabled)+span:hover::before {
+.custom-radio input:not(:disabled) + span:hover::before,
+.custom-checkbox input:not(:disabled) + span:hover::before {
   background-color: $grey_3;
 }
 
 /* стили для активной радиокнопки и чекбокса (при нажатии на неё) */
-.custom-radio input:not(:disabled):active+span::before,
-.custom-checkbox input:not(:disabled):active+span::before {
+.custom-radio input:not(:disabled):active + span::before,
+.custom-checkbox input:not(:disabled):active + span::before {
   background-color: $grey_3;
 }
 
 /* стили для радиокнопки и чекбокса, находящейся в фокусе */
-.custom-radio>input:focus+span::before,
-.custom-checkbox>input:focus+span::before {
+.custom-radio > input:focus + span::before,
+.custom-checkbox > input:focus + span::before {
   // box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
   background-color: $grey_3;
 }
 
 /* стили для радиокнопки и чекбокса, находящейся в фокусе и не находящейся в состоянии checked */
-.custom-radio input:focus:not(:checked)+span::before,
-.custom-checkbox input:focus:not(:checked)+span::before {
+.custom-radio input:focus:not(:checked) + span::before,
+.custom-checkbox input:focus:not(:checked) + span::before {
   background-color: $grey_3;
 }
 
 /* стили для радиокнопки, находящейся в состоянии checked */
-.custom-radio>input:checked+span::after {
+.custom-radio > input:checked + span::after {
   content: "";
   position: absolute;
-  width: 18px;
-  height: 18px;
+  width: 21px;
+  height: 21px;
   background-color: $black_1;
-  left: 15px;
-  top: calc(50% - 9px);
+  left: 18px;
+  top: calc(50% - 10px);
   border-radius: 50%;
 }
 /* стили для чекбокса, находящегося в состоянии checked */
 
-.custom-checkbox>input:checked+span::after {
+.custom-checkbox > input:checked + span::after {
   content: "";
   position: absolute;
   width: 23px;
@@ -83,13 +87,13 @@
 }
 
 /* стили для радиокнопки и чекбокса, находящейся в состоянии disabled */
-.custom-radio>input:disabled+span::before,
-.custom-checkbox>input:disabled+span::before {
+.custom-radio > input:disabled + span::before,
+.custom-checkbox > input:disabled + span::before {
   background-color: $grey_3;
   opacity: 0.1;
 }
 
-.custom-radio>input:disabled+span::after,
-.custom-checkbox>input:disabled+span::after {
+.custom-radio > input:disabled + span::after,
+.custom-checkbox > input:disabled + span::after {
   opacity: 0.1;
 }

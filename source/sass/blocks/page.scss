@@ -23,16 +23,17 @@
   background-color: $white;
   margin: 0 auto;
   width: 320px;
+
   @media (min-width: $tablet-width) {
     width: 768px;
   }
+
   @media (min-width: $desktop-width) {
     width: 1200px;
-    box-shadow: 0 6px 15px 0#00000040;
+    box-shadow: 0 6px 15px 0 $black_shadow;
   }
 }
 
 .page__wrapper main {
   flex: 1;
 }
-

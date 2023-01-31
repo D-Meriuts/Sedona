@@ -22,12 +22,16 @@
   height: 48px;
   background-color: $white_blue;
   margin: 3px 3px;
-  &:hover {
+
+  &:hover,
+  &:focus-within {
     background-color: $white-blue_4;
   }
+
   &:active {
     background-color: $white-blue_5;
   }
+
   &:active svg {
     opacity: 0.3;
   }

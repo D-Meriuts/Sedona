@@ -42,6 +42,7 @@
   height: 66px;
   display: flex;
   align-items: center;
+
   @media (min-width: $tablet-width) {
     height: 93px;
     margin-top: -93px;
@@ -54,19 +55,26 @@
   cursor: pointer;
   background-color: transparent;
   border: none;
-  &:hover path {
+
+  &:hover path,
+  &:focus-within path {
     fill: $black_2;
   }
+
   &:active path {
     fill: $black_1_opacity;
   }
+
   @media (min-width: $tablet-width) {
     & path {
       fill: $white;
     }
-    &:hover path {
+
+    &:hover path,
+    &:focus-within path {
       fill: $white_opacity_2;
     }
+
     &:active path {
       fill: $white_active;
     }
@@ -85,4 +93,3 @@
 .player__button--fullscreen {
   margin-right: 23px;
 }
-

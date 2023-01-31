@@ -1,2 +1,13 @@
-// .width {}
-// .width--mobile {}
+@media (min-width: $tablet-width) {
+  .width--mobile {
+    display: none;
+  }
+}
+
+.width--tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

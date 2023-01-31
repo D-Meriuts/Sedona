@@ -1,7 +1,4 @@
 // .form-feedback {
-  .form-feedback__input {
-    display: block;
-  }
 // }
 
 .form-feedback__input,
@@ -16,4 +13,13 @@
   width: 100%;
   background-color: $grey_2;
   resize: none;
+}
+
+.form-feedback__input {
+  display: block;
+  padding: 13px 21px;
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 21px;
+  }
 }
