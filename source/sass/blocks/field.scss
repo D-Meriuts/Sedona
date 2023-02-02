@@ -1,9 +1,6 @@
-// .field {
-
-// }
-
 .field__label {
   margin-bottom: 5px;
+
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
   }
