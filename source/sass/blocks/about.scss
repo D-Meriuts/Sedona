@@ -1,7 +1,16 @@
 .about {
   margin: 0 auto;
+  padding: 0 20px;
   margin-bottom: 27px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 41px;
+  }
 }
 
 .about__slogan {
@@ -9,24 +18,12 @@
   font-weight: 700;
   font-size: 18px;
   color: $black_1;
-}
 
-.about__description {
-  margin: 0;
-}
-
-@media (min-width: $tablet-width) {
-  .about {
-    margin-bottom: 52.5px;
-  }
-
-  .about__slogan {
+  @media (min-width: $tablet-width) {
     font-size: 21px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .about {
-    margin-bottom: 41px;
-  }
+.about__description {
+  margin: 0;
 }

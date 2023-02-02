@@ -10,14 +10,9 @@
     <div class="page__wrapper">
 
       <header class="page-header page-header--index">
-        <div class="page-header__container">
-          <a class="page-header__logo" href>
-            <img class="page-header__img" src="img/logotype-mobile.svg.svg" alt="логотип сайта Sedona" width="102" height="84">
-          </a>
-        </div>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle toggle" type="button">
+            <span class="visually-hidden">Закрыть меню</span>
           </button>
           <ul class="main-nav__list list">
             <li class="main-nav__item main-nav__item--current">
@@ -33,14 +28,20 @@
               <a href="https://htmlacademy.ru/" target="_blank">html academy</a>
             </li>
           </ul>
+          <a class="page-header__logo" href>
+            <img class="page-header__img" src="img/logotype-mobile.svg.svg" alt="логотип сайта Sedona" width="102" height="84">
+          </a>
         </nav>
+        <div class="page-header__container">
+            <img class="page-header__welcome page-header__welcome--index" src="img/header_background/text-index.svg.svg" alt="Добро пожаловать" width="282" height="214">
+        </div>
       </header>
 
       <main class="page-main page-main--index">
         <h1 class="visually-hidden">Sedona</h1>
         <section class="about">
-          <p class="about__slogan">Cедона — небольшой городок в аризоне, заслуживающий большего!</p>
-          <p class="about__description">рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+          <p class="about__slogan">Cедона — небольшой <br class="width width--mobile"> городок в Аризоне, <br class="width width--mobile"> заслуживающий большего!</p>
+          <p class="about__description">рассмотрим 5 причин, по которым <br class="width width--mobile"> Седона круче, чем Гранд Каньон!</p>
         </section>
         <section class="advantages">
           <h2 class="visually-hidden">Наши приемущества</h2>
@@ -49,23 +50,22 @@
               <div class="advantages__wrapper-pic">
                 <div class="advantages__wrapper">
                   <h3 class="advantages__title advantages__title--pic title">настоящий городок</h3>
-                  <p class="advantages__order advantages__order--pic">— №1 —</p>
-                  <p class="advantages__description advantages__description--pic">Cедона не аттракцион для туристов, там течет своя жизнь</p>
+                  <p class="advantages__description advantages__description--pic">Cедона не аттракцион для туристов, там <br class="width width--mobile"> течет своя жизнь</p>
                 </div>
               </div>
               <div class="city-advantages">
                 <ul class="city-advantages__list list">
                   <li class="city-advantages__item">
                     <h4 class="city-advantages__title title">жилье</h4>
-                    <p class="city-advantages__description">рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                    <p class="city-advantages__description">рекомендуем пожить в <br class="width width--mobile"> настоящем мотеле, все как в <br class="width width--mobile"> кино!</p>
                   </li>
                   <li class="city-advantages__item">
                     <h4 class="city-advantages__title title">сувениры</h4>
-                    <p class="city-advantages__description">не только китайского, но и местного производства!</p>
+                    <p class="city-advantages__description">не только китайского, но и <br class="width width--mobile"> местного производства!</p>
                   </li>
                   <li class="city-advantages__item">
                     <h4 class="city-advantages__title title">еда</h4>
-                    <p class="city-advantages__description">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                    <p class="city-advantages__description">всегда заказывайте <br class="width width--mobile"> фирменный бургер, вы не <br class="width width--mobile"> разочаруетесь!</p>
                   </li>
                 </ul>
               </div>
@@ -74,30 +74,26 @@
               <div class="advantages__wrapper-pic">
                 <div class="advantages__wrapper">
                   <h3 class="advantages__title advantages__title--pic title">там есть мост дьявола</h3>
-                  <p class="advantages__order advantages__order--pic">— №2 —</p>
-                  <p class="advantages__description advantages__description--pic">да, по нему можно пройти! если вы осмелитесь, конечно</p>
+                  <p class="advantages__description advantages__description--pic">да, по нему можно пройти! если вы <br class="width width--mobile"> осмелитесь, конечно</p>
                 </div>
               </div>
             </li>
             <li class="advantages__item">
               <div class="advantages__wrapper">
                 <h3 class="advantages__title title">небольшая площадь</h3>
-                <p class="advantages__order">— №3 —</p>
-                <p class="advantages__description">все интересные места находятся очень близко</p>
+                <p class="advantages__description">все интересные места находятся <br class="width width--mobile"> очень близко</p>
               </div>
             </li>
             <li class="advantages__item">
               <div class="advantages__wrapper">
                 <h3 class="advantages__title title">красивая дорога</h3>
-                <p class="advantages__order">— №4 —</p>
-                <p class="advantages__description">ехать в седону из Лас-Вегаса совсем не скучно!</p>
+                <p class="advantages__description">ехать в седону из Лас-Вегаса <br class="width width--mobile"> совсем не скучно!</p>
               </div>
             </li>
             <li class="advantages__item">
               <div class="advantages__wrapper">
                 <h3 class="advantages__title title">мало туристов</h3>
-                <p class="advantages__order">— №5 —</p>
-                <p class="advantages__description">большинство едет в гранд каньони толпится там</p>
+                <p class="advantages__description">большинство едет в Гранд Каньон <br class="width width--mobile"> и толпится там</p>
               </div>
             </li>
           </ul>
@@ -105,9 +101,11 @@
         <section class="hotel-search">
           <h2 class="visually-hidden">Поиск и бронирование гостиницы</h2>
           <p class="hotel-search__title">заинтересовались?</p>
-          <p class="hotel-search__description">укажите предполагаемые датыпоездки, и мы покажем вам лучшиепредложения гостиниц в седоне</p>
+          <p class="hotel-search__description">укажите предполагаемые даты <br class="width width--mobile"> поездки, и мы покажем вам лучшие <br class="width width--mobile"> предложения гостиниц в седоне</p>
           <div class="hotel-search__wrapper">
-            <a href="" class="hotel-search__button button">найти гостиницу</a>
+            <form>
+              <button class="hotel-search__button button">найти гостиницу</button>
+            </form>
           </div>
         </section>
         <div class="map">
@@ -155,6 +153,21 @@
         </div>
       </footer>
     </div>
+
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+      navMain.classList.remove('main-nav--nojs');
+      navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+      } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+      }
+      });
+    </script>
 
   </body>
 </html>

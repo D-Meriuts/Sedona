@@ -10,21 +10,16 @@
     <div class="page__wrapper">
 
       <header class="page-header page-header--gallery">
-        <div class="page-header__container">
-          <a class="page-header__logo" href="index.html">
-            <img src="img/logotype-mobile.svg.svg" alt="логотип сайта Sedona" width="102" height="84">
-          </a>
-        </div>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle toggle" type="button">
+            <span class="visually-hidden">Закрыть меню</span>
           </button>
           <ul class="main-nav__list list">
             <li class="main-nav__item">
               <a href="index.html">главная</a>
             </li>
             <li class="main-nav__item main-nav__item--current">
-              <a>фото и видео</a>
+              <a href>фото и видео</a>
             </li>
             <li class="main-nav__item">
               <a href="form.html">форма отзыва</a>
@@ -33,11 +28,17 @@
               <a href="https://htmlacademy.ru/" target="_blank">html academy</a>
             </li>
           </ul>
+          <a class="page-header__logo" href="index.html">
+            <img class="page-header__img" src="img/logotype-mobile.svg.svg" alt="логотип сайта Sedona" width="102" height="84">
+          </a>
         </nav>
+        <div class="page-header__container">
+          <img class="page-header__welcome page-header__welcome--inner" src="img/header_background/SEDONA.svg" alt="Добро пожаловать" width="229" height="39">
+        </div>
       </header>
 
       <main class="page-main page-main--gallery">
-        <section class="description">
+        <section class="description description--gallery">
           <h1 class="description__title"> фото и видео</h1>
           <p class="description__text"> Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         </section>
@@ -45,72 +46,86 @@
           <h2 class="visually-hidden"> Фотогалерея</h2>
           <ul class="gallery-photo__list photo list">
             <li class="gallery-photo__item">
-              <figure>
-                <a href="">
-                  <img class="gallery-photo__image" src="img/photo-1-mobile.jpg.jpg" alt="дорога на фоне заката" width="280" height="280">
-                </a>
-                <figcaption>
-                  <p class="gallery-photo__description">неродные просторы</p>
-                  <p class="gallery-photo__sourse">Автор фото: Борис</p>
-                </figcaption>
-              </figure>
-              <p class="gallery-photo__likes-score">1350</p>
+              <a href="">
+                <img class="gallery-photo__image" src="img/photo-1-mobile.jpg.jpg" alt="дорога на фоне заката" width="280" height="280">
+              </a>
+              <div class="gallery-photo__wrapper">
+                <p class="gallery-photo__description">неродные просторы</p>
+                <p class="gallery-photo__sourse">Автор фото: Борис</p>
+                <p class="gallery-photo__likes-score">1350</p>
+              </div>
             </li>
             <li class="gallery-photo__item">
-              <figure>
-                <a href="">
-                  <img class="gallery-photo__image" src="img/photo-2-mobile.jpg.jpg" alt="кактус на фоне горы" width="280" height="280">
-                </a>
-                <figcaption>
-                  <p class="gallery-photo__description">местная растительность</p>
-                  <p class="gallery-photo__sourse">Автор фото: Сергей</p>
-                </figcaption>
-              </figure>
-              <p class="gallery-photo__likes-score">143</p>
+              <a href="">
+                <img class="gallery-photo__image" src="img/photo-2-mobile.jpg.jpg" alt="кактус на фоне горы" width="280" height="280">
+              </a>
+              <div class="gallery-photo__wrapper">
+                <p class="gallery-photo__description">местная растительность</p>
+                <p class="gallery-photo__sourse">Автор фото: Сергей</p>
+                <p class="gallery-photo__likes-score">143</p>
+              </div>
             </li>
             <li class="gallery-photo__item">
-              <figure>
-                <a href="">
-                  <img class="gallery-photo__image" src="img/photo-3-mobile.jpg.jpg" alt="вид с гор на дорогу" width="280" height="280">
-                </a>
-                <figcaption>
-                  <p class="gallery-photo__description">дорога на север</p>
-                  <p class="gallery-photo__sourse">Автор фото: Петр</p>
-                </figcaption>
-              </figure>
-              <p class="gallery-photo__likes-score">96</p>
+              <a href="">
+                <img class="gallery-photo__image" src="img/photo-3-mobile.jpg.jpg" alt="вид с гор на дорогу" width="280" height="280">
+              </a>
+              <div class="gallery-photo__wrapper">
+                <p class="gallery-photo__description">дорога на север</p>
+                <p class="gallery-photo__sourse">Автор фото: Петр</p>
+                <p class="gallery-photo__likes-score">96</p>
+              </div>
             </li>
             <li class="gallery-photo__item">
-              <figure>
-                <a href="">
-                  <img class="gallery-photo__image" src="img/photo-4-mobile.jpg.jpg" alt="мост Дьявола" width="280" height="280">
-                </a>
-                <figcaption>
-                  <p class="gallery-photo__description">мост Дьявола</p>
-                  <p class="gallery-photo__sourse">Автор фото: Антон</p>
-                </figcaption>
-              </figure>
-              <p class="gallery-photo__likes-score">254</p>
+              <a href="">
+                <img class="gallery-photo__image" src="img/photo-4-mobile.jpg.jpg" alt="мост Дьявола" width="280" height="280">
+              </a>
+              <div class="gallery-photo__wrapper">
+                <p class="gallery-photo__description">мост Дьявола</p>
+                <p class="gallery-photo__sourse">Автор фото: Антон</p>
+                <p class="gallery-photo__likes-score">254</p>
+              </div>
             </li>
           </ul>
         </section>
         <section class="gallery gallery-video">
           <h2 class="visually-hidden">Видеогалерея</h2>
-          <p class="gallery-video__title title">Все еще сомневаетесь?</p>
-          <p class="gallery-video__text title__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <div class="gallery-video__wrapper">
+            <p class="gallery-video__title title">Все еще сомневаетесь?</p>
+            <p class="gallery-video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          </div>
           <div class="gallery-video__list">
             <div class="gallery-video__item">
               <img class="gallery-video__image" src="img/video-mobile.jpg.jpg" alt="видеопрезентация о Седоне" width="320" height="201">
             </div>
             <div class="gallery-video__player player">
-              <div class="player__panel">
-                <button></button>
-                <button></button>
-                <button></button>
+              <div class="player__scale-panel">
+                <div class="player__scale"></div>
+                <div class="player__toggle" tabindex="0" style="left:13%;"></div>
+              </div>
+              <div class="player__buttons-panel">
+                <button class="player__button player__button--repeat">
+                  <span class="visually-hidden">повтор</span><svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 4V0L3 5L8 10V6C11.3 6 14 8.7 14 12C14 15.3 11.3 18 8 18C4.7 18 2 15.3 2 12H0C0 16.4 3.6 20 8 20C12.4 20 16 16.4 16 12C16 7.6 12.4 4 8 4Z" fill="#5C6870"/>
+                    </svg>
+                </button>
+                <button class="player__button player__button--subtitles">
+                  <span class="visually-hidden">субтитры</span>
+                  <svg width="32" height="20" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M29 0H3C1.3 0 0 1.3 0 3V17C0 18.7 1.3 20 3 20H29C30.7 20 32 18.7 32 17V3C32 1.3 30.7 0 29 0ZM14.4 15.9C13.9 16 13.3 16 12.7 16C12 16 11.3 15.9 10.7 15.7C10.1 15.5 9.5 15.1 9.1 14.7C8.7 14.3 8.3 13.6 8 12.8C7.7 12 7.6 11.1 7.6 10C7.6 8.9 7.8 7.9 8.1 7.1C8.4 6.3 8.8 5.7 9.3 5.2C9.8 4.7 10.4 4.4 11 4.2C11.5 4.1 12.2 4 12.8 4C13.5 4 14 4 14.5 4.1C15 4.2 15.3 4.3 15.6 4.4L15.2 6.3C14.9 6.2 14.6 6.1 14.3 6C13.9 6 13.5 6 13 6C12.1 6 11.4 6.3 10.8 7C10.2 7.7 10 8.7 10 10C10 10.6 10.1 11.1 10.2 11.6C10.3 12.1 10.5 12.5 10.8 12.9C11.1 13.2 11.4 13.5 11.8 13.7C12.2 13.9 12.7 14 13.2 14C13.7 14 14.1 14 14.5 13.9C14.8 13.8 15.1 13.7 15.4 13.5L15.9 15.3C15.4 15.6 14.9 15.7 14.4 15.9ZM23.1 15.9C22.6 16 22 16 21.4 16C20.7 16 20 15.9 19.4 15.7C18.8 15.5 18.2 15.1 17.8 14.7C17.3 14.2 16.9 13.6 16.7 12.8C16.4 12 16.3 11.1 16.3 10C16.3 8.9 16.5 7.9 16.8 7.1C17.1 6.3 17.5 5.7 18 5.2C18.5 4.7 19.1 4.4 19.7 4.2C20.2 4.1 20.9 4 21.5 4C22.2 4 22.7 4 23.2 4.1C23.7 4.2 24 4.3 24.3 4.4L23.9 6.3C23.6 6.2 23.3 6.1 23 6C22.6 6 22.2 6 21.7 6C20.8 6 20.1 6.3 19.5 7C18.9 7.7 18.7 8.7 18.7 10C18.7 10.6 18.8 11.1 18.9 11.6C19 12.1 19.2 12.5 19.5 12.9C19.8 13.2 20.1 13.5 20.5 13.7C20.9 13.9 21.4 14 21.9 14C22.4 14 22.8 14 23.2 13.9C23.5 13.8 23.8 13.7 24.1 13.5L24.6 15.3C24.1 15.6 23.6 15.7 23.1 15.9Z" fill="#5C6870"/>
+                    </svg>
+                </button>
+                <button class="player__button player__button--fullscreen">
+                  <span class="visually-hidden">во весь экран</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0V3V6H3V3H6V0H3H0Z" fill="#5C6870"/>
+                    <path d="M3 14H0V17V20H3H6V17H3V14Z" fill="#5C6870"/>
+                    <path d="M17 0H14V3H17V6H20V3V0H17Z" fill="#5C6870"/>
+                    <path d="M17 17H14V20H17H20V17V14H17V17Z" fill="#5C6870"/>
+                    </svg>
+                </button>
               </div>
             </div>
           </div>
-          <!-- тут будет видеоплеер   -->
         </section>
       </main>
 
@@ -155,6 +170,20 @@
       </footer>
     </div>
 
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+      navMain.classList.remove('main-nav--nojs');
+      navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+      } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+      }
+      });
+    </script>
 
   </body>
 </html>

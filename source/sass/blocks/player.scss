@@ -1,0 +1,95 @@
+// .player{}
+
+.player__scale-panel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $black_1_opacity_2;
+  height: 45px;
+
+  @media (min-width: $tablet-width) {
+    height: 93px;
+    z-index: 2;
+    background-color: transparent;
+    margin-left: 70px;
+    margin-right: 143px;
+  }
+}
+
+.player__scale {
+  height: 3px;
+  width: 100%;
+  margin: 0 23px;
+  background-color: $white;
+  opacity: 0.2;
+}
+
+.player__toggle {
+  position: absolute;
+  cursor: pointer;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: $white;
+  top: calc(50% - 5px);
+}
+
+.player__buttons-panel {
+  position: relative;
+  background-color: $grey_2;
+  width: 100%;
+  height: 66px;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    height: 93px;
+    margin-top: -93px;
+    background-color: $black_1_opacity_2;
+  }
+}
+
+.player__button {
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+
+  &:hover path,
+  &:focus-within path {
+    fill: $black_2;
+  }
+
+  &:active path {
+    fill: $black_1_opacity;
+  }
+
+  @media (min-width: $tablet-width) {
+    & path {
+      fill: $white;
+    }
+
+    &:hover path,
+    &:focus-within path {
+      fill: $white_opacity_2;
+    }
+
+    &:active path {
+      fill: $white_active;
+    }
+  }
+}
+
+.player__button--repeat {
+  margin-left: 25px;
+  margin-right: auto;
+}
+
+.player__button--subtitles {
+  margin-right: 31px;
+}
+
+.player__button--fullscreen {
+  margin-right: 23px;
+}

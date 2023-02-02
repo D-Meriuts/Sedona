@@ -1,10 +1,10 @@
-// .field {
+.field__label {
+  margin-bottom: 5px;
 
-// }
-
-// .field__label {
-
-// }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
 
 .field__input,
 .field__input::placeholder {
@@ -15,49 +15,82 @@
 }
 
 .field__input {
+  width: 100%;
   background-color: $grey_2;
   border: none;
-  padding: 18px 22px 14px 22px;
+  padding: 18px 10px 14px 22px;
   height: 58px;
+
+  &:hover {
+    background-color: $grey_3;
+  }
+
+  &:focus {
+    background: $white;
+    border: 4px solid $grey_3;
+  }
 }
 
-.field__input--firstname {
-  width: 230px;
+.field__input--phone,
+.field__input--phone:focus,
+.field__input--mail,
+.field__input--mail:focus {
+  padding-right: 80px;
+  background-repeat: no-repeat;
+  background-position: right 20px center, 0 0;
 }
 
-.field__input--surname {
-  width: 192px;
+.field__input--phone,
+.field__input--phone:focus {
+  background-image:
+    url("../img/svg_icons/phone.svg.svg"),
+    linear-gradient(to left, $grey_5 58px, transparent 58px);
 }
 
-.field__input--patronymic {
-  width: 194px;
+.field__input--mail,
+.field__input--mail:focus {
+  background-image:
+    url("../img/svg_icons/mail.svg.svg"),
+    linear-gradient(to left, $grey_5 58px, transparent 58px);
 }
+
+// .field__input--firstname {
+//   width: 230px;
+// }
+
+// .field__input--surname {
+//   width: 192px;
+// }
+
+// .field__input--patronymic {
+//   width: 194px;
+// }
 
 @media (min-width: $tablet-width) {
-  .field__input--firstname {
-    width: 216px;
-  }
+  // .field__input--firstname {
+  //   width: 216px;
+  // }
 
-  .field__input--surname {
-    width: 178px;
-  }
+  // .field__input--surname {
+  //   width: 178px;
+  // }
 
-  .field__input--patronymic {
-    width: 180px;
-  }
+  // .field__input--patronymic {
+  //   width: 180px;
+  // }
   // .revocation-form__field {}
 }
 
 @media (min-width: $desktop-width) {
-  .field__input--firstname {
-    width: 350px;
-  }
+  // .field__input--firstname {
+  //   width: 350px;
+  // }
 
-  .field__input--surname {
-    width: 312px;
-  }
+  // .field__input--surname {
+  //   width: 312px;
+  // }
 
-  .field__input--patronymic {
-    width: 314px;
-  }
+  // .field__input--patronymic {
+  //   width: 314px;
+  // }
 }
