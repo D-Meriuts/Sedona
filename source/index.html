@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Sedona</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
   </head>
   <body class="page__body">
     <div class="page__wrapper">
@@ -14,26 +19,32 @@
           <button class="main-nav__toggle toggle" type="button">
             <span class="visually-hidden">Закрыть меню</span>
           </button>
-          <ul class="main-nav__list list">
-            <li class="main-nav__item main-nav__item--current">
-              <a href>главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="gallery.html">фото и видео</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="form.html">форма отзыва</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="https://htmlacademy.ru/" target="_blank">html academy</a>
-            </li>
-          </ul>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list list">
+              <li class="main-nav__item main-nav__item--current">
+                <a href>главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="gallery.html">фото и видео</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="form.html">форма отзыва</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="https://htmlacademy.ru/" target="_blank">html academy</a>
+              </li>
+            </ul>
+          </div>
           <a class="page-header__logo" href>
-            <img class="page-header__img" src="img/logotype-mobile.svg.svg" alt="логотип сайта Sedona" width="102" height="84">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/header/logotype-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/header/logotype-tablet.svg">
+              <img class="page-header__img" src="img/header/logotype-mobile.svg" alt="логотип сайта Sedona" width="102" height="84">
+            </picture>
           </a>
         </nav>
         <div class="page-header__container">
-            <img class="page-header__welcome page-header__welcome--index" src="img/header_background/text-index.svg.svg" alt="Добро пожаловать" width="282" height="214">
+            <img class="page-header__welcome page-header__welcome--index" src="img/header/text-index.svg.svg" alt="Добро пожаловать" width="282" height="214">
         </div>
       </header>
 
@@ -153,21 +164,6 @@
         </div>
       </footer>
     </div>
-
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-      navMain.classList.remove('main-nav--nojs');
-      navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--closed')) {
-      navMain.classList.remove('main-nav--closed');
-      navMain.classList.add('main-nav--opened');
-      } else {
-      navMain.classList.add('main-nav--closed');
-      navMain.classList.remove('main-nav--opened');
-      }
-      });
-    </script>
-
+    <script src="js/navigation.js"></script>
   </body>
 </html>
