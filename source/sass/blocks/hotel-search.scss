@@ -1,7 +1,7 @@
 .hotel-search {
   margin-bottom: 49px;
   text-align: center;
-  padding: 0;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 58px;
@@ -13,6 +13,7 @@
 }
 
 .hotel-search__title {
+  margin: 0;
   font-weight: 700;
   font-size: 21px;
   color: $black_1;
@@ -24,6 +25,7 @@
 
 .hotel-search__description {
   line-height: 24px;
+  margin: 0;
 }
 
 .hotel-search__button {
