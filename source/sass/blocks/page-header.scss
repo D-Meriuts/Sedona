@@ -12,10 +12,10 @@
 }
 
 .page-header--gallery {
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 }
 
-.page-header__container {
+.page-header__container--index {
   background-color: $grey_2;
   background-repeat: no-repeat, no-repeat;
   background-position: center bottom, center;
@@ -39,6 +39,34 @@
       background-image:
         url("data:image/svg+xml,%3Csvg width='768' height='57' viewBox='0 0 768 57' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M33.6 23.7L-216 0V57H33.6H384L33.6 0V23.7Z' fill='white'/%3E%3Cpath d='M734.4 23.7V0L384 57H734.4H983.9V0L734.4 23.7Z' fill='white'/%3E%3C/svg%3E%0A"),
         url("../img/header/back-desktop@2x.jpg");
+    }
+  }
+}
+
+.page-header__container--inner-page {
+  background-color: $grey_2;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center bottom, center bottom;
+  background-size: 1200px 57px, cover;
+  background-image:
+    url("data:image/svg+xml,%3Csvg width='768' height='57' viewBox='0 0 768 57' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M33.6 23.7L-216 0V57H33.6H384L33.6 0V23.7Z' fill='white'/%3E%3Cpath d='M734.4 23.7V0L384 57H734.4H983.9V0L734.4 23.7Z' fill='white'/%3E%3C/svg%3E%0A"),
+    url("../img/header/inner-page-back-mobile.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image:
+      url("data:image/svg+xml,%3Csvg width='768' height='57' viewBox='0 0 768 57' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M33.6 23.7L-216 0V57H33.6H384L33.6 0V23.7Z' fill='white'/%3E%3Cpath d='M734.4 23.7V0L384 57H734.4H983.9V0L734.4 23.7Z' fill='white'/%3E%3C/svg%3E%0A"),
+      url("../img/header/inner-page-back-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image:
+      url("data:image/svg+xml,%3Csvg width='768' height='57' viewBox='0 0 768 57' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M33.6 23.7L-216 0V57H33.6H384L33.6 0V23.7Z' fill='white'/%3E%3Cpath d='M734.4 23.7V0L384 57H734.4H983.9V0L734.4 23.7Z' fill='white'/%3E%3C/svg%3E%0A"),
+      url("../img/header/inner-page-back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        url("data:image/svg+xml,%3Csvg width='768' height='57' viewBox='0 0 768 57' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M33.6 23.7L-216 0V57H33.6H384L33.6 0V23.7Z' fill='white'/%3E%3Cpath d='M734.4 23.7V0L384 57H734.4H983.9V0L734.4 23.7Z' fill='white'/%3E%3C/svg%3E%0A"),
+        url("../img/header/inner-page-back-desktop@2x.jpg");
     }
   }
 }
@@ -83,17 +111,17 @@
   width: 229px;
   margin: auto;
   padding-top: 50px;
-  padding-bottom: 67px;
+  padding-bottom: 69px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 94px;
+    padding-top: 95px;
     padding-bottom: 117px;
     width: 460px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 100px;
-    padding-bottom: 120px;
+    padding-bottom: 123px;
     width: 460px;
   }
 }
@@ -104,7 +132,7 @@
   }
 
   .page-header--form {
-    margin-bottom: 64px;
+    margin-bottom: 62px;
   }
 
   .page-header--gallery {
@@ -122,6 +150,6 @@
   }
 
   .page-header--gallery {
-    margin-bottom: 96px;
+    margin-bottom: 100px;
   }
 }

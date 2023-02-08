@@ -1,5 +1,5 @@
 .advantages {
-  margin-bottom: 33px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 57px;
@@ -45,19 +45,31 @@
   counter-increment: order;
   content: "— №" counter(order) "—";
   padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 25px;
+  }
 }
 
 .advantages__wrapper {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding-top: 26px;
+  justify-content: flex-start;
+  padding-top: 25px;
   padding-left: 10px;
   padding-right: 10px;
 
   @media (min-width: $tablet-width) {
     min-height: 256px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 55px;
+    padding-right: 55px;
   }
 }
 
@@ -66,7 +78,7 @@
   margin-bottom: 260px;
 
   &--first {
-    padding-top: 44px;
+    padding-top: 46px;
   }
 
   &--second {
@@ -162,17 +174,29 @@
 
 .advantages__title {
   padding-bottom: 10px;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
-.advantages__title--pic {
+// .advantages__title--pic {
   // padding-bottom: 10px;
-
-}
+  // @media (min-width: $desktop-width) {
+    // padding-left: 40px;
+    // padding-right: 40px;
+  // }
+// }
 
 .advantages__description {
   line-height: 21px;
   margin: 0;
-  padding-bottom: 24px;
+
+  @media (max-width: $mobile-width-only) {
+    padding-bottom: 24px;
+  }
 }
 
 
@@ -197,20 +221,21 @@
 
 @media (min-width: $tablet-width) {
   .advantages__item--pic:first-child .advantages__wrapper {
-    padding: 40px 32px 44px 32px;
+    padding: 40px 30px 20px 30px;
   }
 
   .advantages__item--pic:nth-child(2) .advantages__wrapper {
-    padding: 43px 36px 41px 36px;
+    padding: 43px 30px 18px 30px;
+
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantages__item--pic:first-child .advantages__wrapper {
-    padding: 47px 52px 57px 53px;
+    padding: 47px 65px 35px 65px;
   }
 
   .advantages__item--pic:nth-child(2) .advantages__wrapper {
-    padding: 51px 78px 53px 79px;
+    padding: 51px 85px 53px 85px;
   }
 }

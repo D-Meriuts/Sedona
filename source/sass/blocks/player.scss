@@ -33,6 +33,15 @@
   border-radius: 50%;
   background-color: $white;
   top: calc(50% - 5px);
+  left: 21%;
+
+  @media (min-width: $tablet-width) {
+    left: 31%;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 23%;
+  }
 }
 
 .player__buttons-panel {
@@ -84,6 +93,10 @@
 .player__button--repeat {
   margin-left: 25px;
   margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 35px;
+  }
 }
 
 .player__button--subtitles {
@@ -92,4 +105,8 @@
 
 .player__button--fullscreen {
   margin-right: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 41px;
+  }
 }

@@ -4,21 +4,23 @@
 
 .description--gallery {
   border-bottom: 1px solid $grey_3;
-  margin-bottom: 22px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 38px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     border: none;
-    padding-bottom: 59px;
+    padding-bottom: 0;
     padding-left: 95px;
     padding-right: 95px;
+    margin-bottom: 80px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 67px;
     padding-left: 311px;
     padding-right: 311px;
+    margin-bottom: 79px;
   }
 }
 
@@ -28,18 +30,40 @@
   color: $black_1;
   text-align: center;
   margin: 0;
-  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
   }
 }
 
-.description__text--form {
+.description__title--form {
+  margin-bottom: 29px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
+}
+
+.description__title--gallery {
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+  }
+}
+
+.description__text {
   line-height: 24px;
   margin: 0;
-  // margin-bottom: 16px;
 }
+
+// .description__text--form {
+//   line-height: 24px;
+//   margin: 0;
+// }
+
+// .description__text--gallery {
+
+// }
 
 .description--form {
   padding: 0 20px;
@@ -47,10 +71,12 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    margin-bottom: 60px;
+    margin-bottom: 87px;
+    padding: 0 165px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 57px;
+    padding: 0 382px;
   }
 }
