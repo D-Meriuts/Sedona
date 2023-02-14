@@ -19,7 +19,6 @@
 .page-header__container--inner-page {
   background-color: $grey_2;
   background-repeat: no-repeat, no-repeat;
-  // background-position: center bottom, center;
   background-size: 1200px 57px, cover;
 }
 
@@ -50,11 +49,6 @@
 }
 
 .page-header__container--inner-page {
-
-  // background-color: $grey_2;
-  // background-repeat: no-repeat, no-repeat;
-  // background-position: center bottom, center bottom;
-  // background-size: 1200px 57px, cover;
   background-position: center bottom, center bottom;
 
   background-image:
@@ -93,13 +87,6 @@
     }
   }
 }
-
-// @media (min-width: $desktop-width) {
-//   .page-header__container--index,
-//   .page-header__container--inner-page {
-//     background-size: 1200px 57px, cover;
-//   }
-// }
 
 .page-header__logo {
   position: absolute;
