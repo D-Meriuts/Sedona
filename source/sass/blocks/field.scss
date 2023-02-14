@@ -1,5 +1,4 @@
 .field__label--name {
-  // margin-bottom: 5px;
   margin-right: 13px;
 
   @media (min-width: $desktop-width) {
@@ -68,7 +67,3 @@
     url("../img/svg_icons/mail.svg.svg"),
     linear-gradient(to left, $grey_5 58px, transparent 58px);
 }
-
-// @media (min-width: $tablet-width) {}
-
-// @media (min-width: $desktop-width) {}

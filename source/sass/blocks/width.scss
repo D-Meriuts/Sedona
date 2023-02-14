@@ -1,5 +1,11 @@
-@media (min-width: $tablet-width) {
-  .width--mobile {
+.width--all-devices {
+  display: block;
+}
+
+.width--mobile {
+  display: block;
+
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }

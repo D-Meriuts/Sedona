@@ -1,6 +1,6 @@
 .city-advantages {
   background-color: $white;
-  padding: 35px 20px 8px 20px;
+  padding: 35px 20px 9px 20px;
 
   @media (min-width: $tablet-width) {
     padding: 60px 0 33px 0;
@@ -38,8 +38,8 @@
     }
 
     &--souvenirs {
-      padding-left: 30px;
-      padding-right: 30px;
+      padding-left: 32px;
+      padding-right: 32px;
       order: 2;
     }
 
@@ -86,9 +86,6 @@
   @media (min-width: $tablet-width) {
     background-size: 75px 72px;
   }
-
-  // background-position: 0 -10px;
-  // для смещения картинки пере
 }
 
 .city-advantages__item:nth-child(2)::before {
@@ -99,8 +96,6 @@
   @media (min-width: $tablet-width) {
     background-size: 64px 75px;
   }
-
-  // background-position: 10px; для смещения картинки пере
 }
 
 .city-advantages__item:nth-child(3)::before {
@@ -109,17 +104,11 @@
   background-position: 0 5px;
 
   @media (min-width: $tablet-width) {
-    // background-size: 64px 75px;
     background-size: 76px 68px;
   }
 }
 
 .city-advantages__title {
-  // color: $black_1;
-  // font-weight: 700;
-  // font-size: 18px;
-  // line-height: 26px;
-  // margin: 0;
   padding-bottom: 17px;
   margin: 0;
 

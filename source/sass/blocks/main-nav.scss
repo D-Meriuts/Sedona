@@ -1,5 +1,4 @@
 .main-nav {
-  // background-color: $white_blue;
   position: relative;
   margin-bottom: 56px;
 
@@ -71,7 +70,6 @@
 .main-nav--nojs .main-nav__item {
   display: block;
 }
-
 
 .main-nav__list {
   @media (min-width: $tablet-width) {

@@ -1,6 +1,3 @@
-// .form-feedback {
-// }
-
 .form-feedback__input,
 .form-feedback__input::placeholder {
   font-family: "PT Sans", "Arial", sans-serif;
@@ -13,6 +10,20 @@
   width: 100%;
   background-color: $grey_2;
   resize: none;
+}
+
+.form-feedback__input:hover,
+.form-feedback__input:hover::placeholder {
+  background-color: $grey_3;
+}
+
+.form-feedback__input:focus {
+  background: $white;
+  border: 4px solid $grey_3;
+}
+
+.form-feedback__input:focus::placeholder {
+  background: $white;
 }
 
 .form-feedback__input {

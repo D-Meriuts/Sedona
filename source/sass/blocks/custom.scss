@@ -2,7 +2,6 @@
   position: relative;
   cursor: pointer;
   display: block;
-  // height: 48px;
 }
 
 .custom-radio span,
@@ -22,11 +21,9 @@
   position: absolute;
   left: 0;
   top: -3px;
-  // display: inline-block;
   width: 56px;
   height: 56px;
   background-color: $grey_2;
-  // margin-right: 20px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;
