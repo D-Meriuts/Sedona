@@ -55,12 +55,11 @@
   margin-top: 10px;
 }
 
-.page-footer__link:hover path,
-.page-footer__link:focus-within path {
+.page-footer__link:hover,
+.page-footer__link:focus-within {
   fill: $white_blue;
-  // fill: red;
 }
 
-.page-footer__link:active path {
+.page-footer__link:active {
   fill: $black_1_opacity;
 }
